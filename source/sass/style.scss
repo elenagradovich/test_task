@@ -1,0 +1,77 @@
+
+@import "_fonts.scss";
+@import "_varaibles.scss";
+@import "_mixins.scss";
+
+.page {
+  margin: 0;
+  padding: 0;
+  min-width: $mobile-width;
+  width: 100vw;
+  font-family: "Lato Regular";
+  font-size: 12px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: $desktop-width;
+}
+
+input {
+  font-size: 18px;
+  color: rgb(0, 0, 0);;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: rgb(39, 39, 51);
+  line-height: 1.222;}/* webkit */
+input::-moz-placeholder {
+  font-size: 18px;
+  color: rgb(39, 39, 51);
+  line-height: 1.222;}/* Firefox 19+ */
+input::-moz-placeholder {
+  font-size: 18px;
+  color: rgb(39, 39, 51);
+  line-height: 1.222;}/* Firefox 18- */
+input::-ms-input-placeholder {
+  font-size: 18px;
+  color: rgb(39, 39, 51);
+  line-height: 1.222;}/* IE */
+  
+@import "elements/_header.scss";
+@import "elements/_navigation.scss";
+@import "elements/_banner.scss";
+@import "elements/_page-content.scss";
+@import "elements/_order.scss";
+@import "elements/_description.scss";
+@import "elements/_form.scss";
+@import "elements/_footer.scss";
+@import "elements/_range.scss";
+@import "elements/_payment.scss";
+@import "elements/_contacts.scss";
+@import "elements/_select.scss";

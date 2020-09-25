@@ -1,0 +1,55 @@
+.footer {
+  margin-top: auto;
+  background-color: $bg-footer;
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+
+  &__copyright {
+    color: $color-text1;
+    font-size: 13px;
+    line-height: 1.077;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+
+  &__payment {
+    margin-bottom: 10px;
+  }
+
+  &__contacts {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
+  .footer {
+    
+    &__copyright {
+      width: 30%;
+      margin-bottom: 0;
+    }
+
+    &__payment {
+      margin: 0 auto;
+    }
+
+    &__contacts {
+      width: 30%;
+      margin: 0;
+    }
+  }
+}
+
+

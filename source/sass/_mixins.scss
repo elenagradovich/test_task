@@ -1,0 +1,31 @@
+@mixin btn-1($width) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $btn-height;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  background-color: $bg-btn-1;
+  font-size: 12px;
+  color: $color-text-btn-1;
+  text-transform: uppercase;
+  line-height: 1.385;
+  text-align: center;
+}
+
+@mixin btn-2($width) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $btn-height;
+  border: 1px solid rgb(111, 109, 123);
+  border-radius: 4px;
+  background-color: $bg-btn-2;
+  font-size: 12px;
+  color: $color-text-btn-2;
+  text-transform: uppercase;
+  line-height: 1.385;
+  text-align: center;
+}

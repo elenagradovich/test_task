@@ -1,0 +1,100 @@
+.banner {
+  height: auto;
+  padding-top: $header-height/2 + 25px;
+  background-color: #d1dfe2;
+  background-image: url('../../img/banner_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: $color-text2;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    margin-bottom: 40px;
+
+    &--color {
+      color: $color-text3;
+    }
+  }
+
+  &__list-title {
+    font-size: 16px;
+    color: $color-text2;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    color: $color-text2;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+
+  &__list li {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__list li:before {
+    position: absolute;
+    content: "-";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__btn-1 {
+    @include btn-1($btn-width);
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__btn-2 {
+    @include btn-2($btn-width);
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .banner {
+    height: 850px;
+    padding-top: 200px;
+    background-image: url('../../img/banner_bg.jpg');
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 50px;
+    }
+
+    &__list-title {
+      font-size: 20px;
+    }
+  
+    &__list {
+      margin-bottom: 60px;
+      font-size: 20px;
+    }
+  }
+}

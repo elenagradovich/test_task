@@ -1,0 +1,131 @@
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    color: $color-text1;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 170px;
+  }
+
+  &__icon {
+    position: relative;
+    border: 5px solid rgb(40, 102, 144);
+    border-radius: 50%;
+    background-color: rgb(62, 156, 220);
+    width: 100px;
+    height: 101px;
+    margin: 0 auto 30px;
+
+    &--1:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background-image: url("../../img/icon-order-1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--2:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background-image: url("../../img/icon-order-2.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--3:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background-image: url("../../img/icon-order-3.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--4:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background-image: url("../../img/icon-order-4.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--5:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background-image: url("../../img/icon-order-5.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    &__wrapper {
+      padding: 90px 0;
+    }
+
+    &__item {
+      position: relative;
+      width: 15%;
+    }
+
+    &__icon {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 130%;
+        transform: translateY(-50%);
+        width: 102px;
+        height: 6px;
+        background:url("../../img/dot.png") repeat-x;
+      }
+    }
+
+    &__icon--5::after {
+      background: none;
+    }
+  }
+}

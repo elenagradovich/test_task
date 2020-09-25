@@ -1,0 +1,37 @@
+.order {
+  &__wrapper {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    color: $color-text1;
+    margin-bottom: 20px;
+
+    &--color {
+      color: $color-text3;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.222;
+    color: $color-text4;
+    margin-bottom: 75px;
+  }
+
+  &__description-list {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    &__wrapper {
+      padding: 90px 0 145px;
+    }
+  }
+}
